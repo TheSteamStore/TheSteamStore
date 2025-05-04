@@ -1,0 +1,254 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #111;
+  color: #fff;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 20px;
+  animation: slideIn 1s ease-in-out;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+}
+
+.text-group {
+  color: #00FF00;
+}
+
+.logo-text {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.header-buttons a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #00FF00;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.header-buttons a:hover {
+  background-color: #333;
+  color: #00FF00;
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.why-choose-us {
+  background-color: #222;
+}
+
+.why-choose-us ul {
+  list-style: none;
+}
+
+.why-choose-us ul li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.explore-button {
+  margin-top: 20px;
+  background-color: #00FF00;
+  color: #111;
+  padding: 12px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+.explore-button:hover {
+  background-color: #333;
+  color: #00FF00;
+}
+
+.top-selling-games {
+  background-color: #333;
+}
+
+.games-grid {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap; /* Allow wrapping for responsiveness */
+  padding: 20px;
+}
+
+.game-card {
+  background-color: #444;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+  width: 350px; /* Increased width */
+  margin-bottom: 20px;
+}
+
+.game-card img {
+  width: 100%;
+  height: 200px; /* Adjusted height to maintain aspect ratio */
+  object-fit: cover; /* Ensures the image is contained properly */
+  border-radius: 8px;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+.game-card h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.game-card p {
+  font-size: 16px;
+  color: #bbb;
+}
+
+.game-feature {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222;
+  padding: 40px 20px;
+  align-items: center;
+}
+
+.game-details {
+  width: 50%;
+}
+
+.game-details h3 {
+  font-size: 28px;
+  color: #00FF00;
+}
+
+.game-details ul {
+  list-style: none;
+}
+
+.game-details ul li {
+  margin-bottom: 10px;
+}
+
+.game-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.contact-us {
+  background-color: #111;
+  padding: 40px 20px;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-image img {
+  width: 45%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.contact-details {
+  width: 50%;
+  text-align: left;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: #00FF00;
+  padding: 12px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 20px;
+  color: #111;
+}
+
+.contact-button:hover {
+  background-color: #333;
+  color: #00FF00;
+}
+
+footer {
+  text-align: center;
+  background-color: #111;
+  padding: 20px;
+}
+
+.footer-buttons a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #00FF00;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.footer-buttons a:hover {
+  background-color: #333;
+  color: #00FF00;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.animate-section {
+  opacity: 0;
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
